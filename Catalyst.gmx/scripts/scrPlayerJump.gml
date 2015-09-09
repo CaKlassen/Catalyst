@@ -3,6 +3,12 @@ if ((place_meeting(floor(x),round(y+(global.grav)),objBlock) && place_meeting(ce
     vspeed = -jump;
     djump = 1;
     audio_play_sound(sndJump,0,0);
+    
+    with (objToggle)
+    {
+        go = true;
+        toggle = !toggle;
+    }
 }
 else if (djump == true || place_meeting(x,round(y+(global.grav)),objWater2))
 {
@@ -12,4 +18,10 @@ else if (djump == true || place_meeting(x,round(y+(global.grav)),objWater2))
     
     if (!place_meeting(x,round(y+(global.grav)),objWater3))   //check if player is touching water3 so that djump isn't taken away
         djump = 0;
+        
+    with (objToggle)
+    {
+        go = true;
+        toggle = !toggle;
+    }
 }

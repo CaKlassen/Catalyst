@@ -115,26 +115,28 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scrPlayerJump.gml</script>
-    <script>scripts\scrPlayerShoot.gml</script>
-    <script>scripts\scrPlayerVJump.gml</script>
-    <script>scripts\scrKillPlayer.gml</script>
-    <script>scripts\scrInitializeVariables.gml</script>
-    <script>scripts\scrConfigVariables.gml</script>
-    <script>scripts\scrDefConfig.gml</script>
-    <script>scripts\scrSaveConfig.gml</script>
-    <script>scripts\scrLoadConfig.gml</script>
-    <script>scripts\scrSaveGame.gml</script>
-    <script>scripts\scrLoadGame.gml</script>
-    <script>scripts\scrWriteBytes.gml</script>
-    <script>scripts\scrReadBytes.gml</script>
-    <script>scripts\scrHexToDec.gml</script>
-    <script>scripts\scrDecToHex.gml</script>
-    <script>scripts\scrSetRoomCaption.gml</script>
-    <script>scripts\scrGetMusic.gml</script>
-    <script>scripts\scrPlayMusic.gml</script>
-    <script>scripts\scrMakeShapes.gml</script>
-    <script>scripts\scrMakeCircle.gml</script>
+    <scripts name="Engine">
+      <script>scripts\scrPlayerJump.gml</script>
+      <script>scripts\scrPlayerVJump.gml</script>
+      <script>scripts\scrPlayerShoot.gml</script>
+      <script>scripts\scrKillPlayer.gml</script>
+      <script>scripts\scrInitializeVariables.gml</script>
+      <script>scripts\scrConfigVariables.gml</script>
+      <script>scripts\scrDefConfig.gml</script>
+      <script>scripts\scrSaveConfig.gml</script>
+      <script>scripts\scrLoadConfig.gml</script>
+      <script>scripts\scrSaveGame.gml</script>
+      <script>scripts\scrLoadGame.gml</script>
+      <script>scripts\scrWriteBytes.gml</script>
+      <script>scripts\scrReadBytes.gml</script>
+      <script>scripts\scrHexToDec.gml</script>
+      <script>scripts\scrDecToHex.gml</script>
+      <script>scripts\scrSetRoomCaption.gml</script>
+      <script>scripts\scrGetMusic.gml</script>
+      <script>scripts\scrMakeShapes.gml</script>
+      <script>scripts\scrPlayMusic.gml</script>
+      <script>scripts\scrMakeCircle.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -143,7 +145,10 @@
     <font>fonts\fDefault12</font>
   </fonts>
   <objects name="objects">
-    <objects name="world">
+    <objects name="Controllers">
+      <object>objects\objController</object>
+    </objects>
+    <objects name="World">
       <object>objects\objWorld</object>
       <object>objects\objCamera</object>
       <object>objects\objSmoothCamera</object>
@@ -153,7 +158,7 @@
       <object>objects\objControlsMenu</object>
       <object>objects\objDifficultyMenu</object>
     </objects>
-    <objects name="player">
+    <objects name="Player">
       <object>objects\objPlayerStart</object>
       <object>objects\objPlayer</object>
       <object>objects\objBow</object>
@@ -162,7 +167,7 @@
       <object>objects\objBlood</object>
       <object>objects\objGameOver</object>
     </objects>
-    <objects name="blocks">
+    <objects name="Blocks">
       <object>objects\objBlock</object>
       <object>objects\objMiniBlock</object>
       <object>objects\objSlipBlock</object>
@@ -173,14 +178,22 @@
       <object>objects\objBossBlock</object>
       <object>objects\objSaveBlocker</object>
     </objects>
-    <objects name="platforms">
+    <objects name="Platforms">
       <object>objects\objPlatform</object>
       <object>objects\objMovingPlatform</object>
       <object>objects\objBlockFall</object>
       <object>objects\objBlockRise</object>
     </objects>
-    <objects name="killers">
+    <objects name="Dangers">
       <object>objects\objPlayerKiller</object>
+      <objects name="Toggles">
+        <object>objects\objToggle</object>
+        <object>objects\objSpikeToggle</object>
+        <object>objects\objSpikeUpToggle</object>
+        <object>objects\objSpikeDownToggle</object>
+        <object>objects\objSpikeRightToggle</object>
+        <object>objects\objSpikeLeftToggle</object>
+      </objects>
       <object>objects\objSpikeUp</object>
       <object>objects\objSpikeRight</object>
       <object>objects\objSpikeLeft</object>
@@ -195,7 +208,7 @@
       <object>objects\objCherryBounceLat</object>
       <object>objects\objCherryBounceVert</object>
       <object>objects\objKillerBlock</object>
-      <objects name="bosses">
+      <objects name="Bosses">
         <object>objects\objCherryEnemyTest</object>
         <object>objects\objCherryBossTest</object>
         <objects name="miku">
@@ -206,7 +219,7 @@
         </objects>
       </objects>
     </objects>
-    <objects name="triggers">
+    <objects name="Triggers">
       <object>objects\objFreeTrigger</object>
       <object>objects\objTriggerButton</object>
       <object>objects\objKillerTrigger</object>
@@ -216,7 +229,7 @@
       <object>objects\objSpikeTriggerUp</object>
       <object>objects\objCherryTrigger</object>
     </objects>
-    <objects name="misc">
+    <objects name="Miscellaneous">
       <object>objects\objWater</object>
       <object>objects\objWater2</object>
       <object>objects\objWater3</object>
@@ -227,7 +240,7 @@
       <object>objects\objGravityUp</object>
       <object>objects\objGravityDown</object>
     </objects>
-    <objects name="saves">
+    <objects name="Saves">
       <object>objects\objSaveMedium</object>
       <object>objects\objSave</object>
       <object>objects\objSaveVHard</object>
@@ -235,13 +248,13 @@
       <object>objects\objSaveFlip</object>
       <object>objects\objSaveVHardFlip</object>
     </objects>
-    <objects name="warps">
+    <objects name="Warps">
       <object>objects\objRoomChanger</object>
       <object>objects\objWarp</object>
       <object>objects\objWarpNext</object>
       <object>objects\objWarpStart</object>
     </objects>
-    <objects name="items">
+    <objects name="Items">
       <object>objects\objSecretItem</object>
       <object>objects\objSecretIndicator</object>
       <object>objects\objBossItem</object>
@@ -250,14 +263,19 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="init">
+    <rooms name="Init">
       <room>rooms\rInit</room>
       <room>rooms\rTitle</room>
       <room>rooms\rMenu</room>
       <room>rooms\rOptions</room>
       <room>rooms\rDifficultySelect</room>
     </rooms>
-    <rooms name="sample">
+    <rooms name="Game">
+      <rooms name="World 1">
+        <room>rooms\rmTest</room>
+      </rooms>
+    </rooms>
+    <rooms name="Sample">
       <room>rooms\rStage01</room>
       <room>rooms\rCherryBoss</room>
       <room>rooms\rStage02</room>
