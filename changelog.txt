@@ -1,0 +1,49 @@
+v1.01 (9/6/15):
+-Fixed warp room mode for file difficulty select not working properly
+-Tweaked game muting/unmuting using Ctrl+M to work properly when using objPlayMusic
+
+v1.0 (9/4/15):
+-Added debug overlay (toggle with backspace)
+-Updated objSign to display text instead of using show_message
+-Added configurable variable for which sound to use for navigating the menu
+-Added volume control to the options menu
+-Added randomize() when the game is started to start with a random seed for RNG (Studio starts with the same initial seed every time you run the game)
+-Added scrPlayMusic script to make it easier to change songs
+-Added objPlayMusic for people who don't want to use the scrGetMusic method of playing music
+-Added example Miku avoidance (Thanks to Stinkycheeseone890 for designing it!)
+-Some other minor changes/fixes
+
+v0.9 (9/1/15):
+-Added main menu system based off the KS engine that has options and rebindable controls
+-Added saving fullscreen mode in the config file
+
+v0.8 (8/31/15):
+-Fixed the player sometimes getting stuck on the sides of objSlideBlocks
+-Fixed game not restarting properly when pressing R and F2 on the same frame
+-Fixed texture interpolation setting bugging out when pressing F2+F4 on the same frame
+-Changed it so that you can't switch between fullscreen on/off when the game is paused (this caused the pause surface to be lost)
+-Added a variable to customize the speed of objSmoothCamera
+-Changed default case for scrGetMusic to play nothing instead of musGuyRock
+-Changed font naming
+-Fixed the player occasionally drawing abnormally
+-Set debug mode off by default
+-Added a variable for whether or not to show the debug player visual changes when inf jump/god mode are toggled
+-Some other minor changes/fixes
+
+v0.7 (8/29/15):
+-Implemented save verification system with MD5 hash checks to make saves harder to hack
+
+v0.65 (8/27/15):
+-Fixed a bug where right vines wouldn't always work properly
+
+v0.6 (8/26/15):
+-Implemented pause screen that shows deaths/time
+-Implemented volume control in the pause menu (Updated config file to save the volume level)
+-Made objGameClear autosave when touched
+-Optimized objMovingPlatform performance
+-Merged objMusicFade into objWorld
+-Fixed the player moving when standing still for a long time on objSlipBlock
+-Fixed a case where the player could save inside of a wall
+
+v0.5 (8/23/15):
+-Initial release
