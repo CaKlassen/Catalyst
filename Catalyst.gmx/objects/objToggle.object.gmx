@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>toggle = false;
+            <string>event_inherited();
+
+toggle = false;
 </string>
           </argument>
         </arguments>

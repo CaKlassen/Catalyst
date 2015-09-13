@@ -145,55 +145,8 @@
     <font>fonts\fDefault12</font>
   </fonts>
   <objects name="objects">
-    <objects name="Controllers">
-      <object>objects\objController</object>
-    </objects>
-    <objects name="World">
-      <object>objects\objWorld</object>
-      <object>objects\objCamera</object>
-      <object>objects\objSmoothCamera</object>
-      <object>objects\objPlayMusic</object>
-      <object>objects\objTitleMenu</object>
-      <object>objects\objOptionsMenu</object>
-      <object>objects\objControlsMenu</object>
-      <object>objects\objDifficultyMenu</object>
-    </objects>
-    <objects name="Player">
-      <object>objects\objPlayerStart</object>
-      <object>objects\objPlayer</object>
-      <object>objects\objBow</object>
-      <object>objects\objBullet</object>
-      <object>objects\objBloodEmitter</object>
-      <object>objects\objBlood</object>
-      <object>objects\objGameOver</object>
-    </objects>
-    <objects name="Blocks">
-      <object>objects\objBlock</object>
-      <object>objects\objMiniBlock</object>
-      <object>objects\objSlipBlock</object>
-      <object>objects\objBlockInvis</object>
-      <object>objects\objBlockFake</object>
-      <object>objects\objSlideBlockL</object>
-      <object>objects\objSlideBlockR</object>
-      <object>objects\objBossBlock</object>
-      <object>objects\objSaveBlocker</object>
-    </objects>
-    <objects name="Platforms">
-      <object>objects\objPlatform</object>
-      <object>objects\objMovingPlatform</object>
-      <object>objects\objBlockFall</object>
-      <object>objects\objBlockRise</object>
-    </objects>
     <objects name="Dangers">
       <object>objects\objPlayerKiller</object>
-      <objects name="Toggles">
-        <object>objects\objToggle</object>
-        <object>objects\objSpikeToggle</object>
-        <object>objects\objSpikeUpToggle</object>
-        <object>objects\objSpikeDownToggle</object>
-        <object>objects\objSpikeRightToggle</object>
-        <object>objects\objSpikeLeftToggle</object>
-      </objects>
       <object>objects\objSpikeUp</object>
       <object>objects\objSpikeRight</object>
       <object>objects\objSpikeLeft</object>
@@ -218,6 +171,57 @@
           <object>objects\objCherryRandomColBounce</object>
         </objects>
       </objects>
+    </objects>
+    <objects name="Toggles">
+      <object>objects\objToggle</object>
+      <object>objects\objSpikeToggle</object>
+      <object>objects\objSpikeUpToggle</object>
+      <object>objects\objSpikeDownToggle</object>
+      <object>objects\objSpikeRightToggle</object>
+      <object>objects\objSpikeLeftToggle</object>
+      <object>objects\objSpikeUpToggleOut</object>
+      <object>objects\objSpikeDownToggleOut</object>
+      <object>objects\objSpikeLeftToggleOut</object>
+      <object>objects\objSpikeRightToggleOut</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\objPlayerStart</object>
+      <object>objects\objPlayer</object>
+      <object>objects\objBow</object>
+      <object>objects\objBullet</object>
+      <object>objects\objBloodEmitter</object>
+      <object>objects\objBlood</object>
+      <object>objects\objGameOver</object>
+    </objects>
+    <objects name="World">
+      <object>objects\objWorld</object>
+      <object>objects\objCamera</object>
+      <object>objects\objSmoothCamera</object>
+      <object>objects\objPlayMusic</object>
+      <object>objects\objTitleMenu</object>
+      <object>objects\objOptionsMenu</object>
+      <object>objects\objControlsMenu</object>
+      <object>objects\objDifficultyMenu</object>
+    </objects>
+    <objects name="Blocks">
+      <object>objects\objBlock</object>
+      <object>objects\objMiniBlock</object>
+      <object>objects\objSlipBlock</object>
+      <object>objects\objBlockInvis</object>
+      <object>objects\objBlockFake</object>
+      <object>objects\objSlideBlockL</object>
+      <object>objects\objSlideBlockR</object>
+      <object>objects\objBossBlock</object>
+      <object>objects\objSaveBlocker</object>
+    </objects>
+    <objects name="Platforms">
+      <object>objects\objPlatform</object>
+      <object>objects\objMovingPlatform</object>
+      <object>objects\objBlockFall</object>
+      <object>objects\objBlockRise</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\objController</object>
     </objects>
     <objects name="Triggers">
       <object>objects\objFreeTrigger</object>
@@ -272,7 +276,10 @@
     </rooms>
     <rooms name="Game">
       <rooms name="World 1">
-        <room>rooms\rmTest</room>
+        <room>rooms\rm1_0</room>
+        <room>rooms\rm1_1</room>
+        <room>rooms\rm1_2</room>
+        <room>rooms\rm1_3</room>
       </rooms>
     </rooms>
     <rooms name="Sample">
